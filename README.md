@@ -1,4 +1,4 @@
-# node-starter
+# Hendrix Backend
 
 Node starter for rest api using express, passport, mongodb
 
