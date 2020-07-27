@@ -1,0 +1,45 @@
+{
+  "name": "node-starter",
+  "version": "1.0.0",
+  "description": "A boilerplate for Node.js web applications",
+  "license": "MIT",
+  "author": "Amit Gur",
+  "scripts": {
+    "start": "nodemon bandPadPayment.js",
+    "expressDebug": "DEBUG=express-session node bandPadPayment.js"
+  },
+  "dependencies": {
+    "@sendgrid/client": "^7.2.1",
+    "@sendgrid/mail": "^7.2.1",
+    "body-parser": "^1.19.0",
+    "chalk": "^4.1.0",
+    "compression": "^1.7.4",
+    "connect-flash": "^0.1.1",
+    "connect-mongo": "^3.2.0",
+    "cookie-parser": "^1.4.5",
+    "cors": "^2.8.5",
+    "dotenv": "^8.2.0",
+    "errorhandler": "^1.5.1",
+    "express": "^4.17.1",
+    "express-session": "^1.17.1",
+    "express-status-monitor": "^1.3.3",
+    "jest": "^26.1.0",
+    "juice": "^7.0.0",
+    "lodash": "^4.17.19",
+    "lusca": "^1.6.1",
+    "mongoose": "^5.9.22",
+    "morgan": "^1.10.0",
+    "passport": "^0.3.2",
+    "passport-local": "^1.0.0",
+    "pug": "^3.0.0",
+    "swig": "^1.4.2",
+    "validator": "^13.1.1"
+  },
+  "devDependencies": {
+    "prettier": "^2.0.5"
+  },
+  "engines": {
+    "node": ">=10.19.0",
+    "npm": ">=6.13.4"
+  }
+}
