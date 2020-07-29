@@ -5,8 +5,8 @@
   "license": "MIT",
   "author": "Amit Gur",
   "scripts": {
-    "start": "nodemon bandPadPayment.js",
-    "expressDebug": "DEBUG=express-session node bandPadPayment.js"
+    "start": "nodemon hendrix_backend.js",
+    "expressDebug": "DEBUG=express-session node hendrix_backend.js"
   },
   "dependencies": {
     "@sendgrid/client": "^7.2.1",
@@ -23,6 +23,7 @@
     "express": "^4.17.1",
     "express-session": "^1.17.1",
     "express-status-monitor": "^1.3.3",
+    "install": "^0.13.0",
     "jest": "^26.1.0",
     "juice": "^7.0.0",
     "lodash": "^4.17.19",
@@ -33,7 +34,8 @@
     "passport-local": "^1.0.0",
     "pug": "^3.0.0",
     "swig": "^1.4.2",
-    "validator": "^13.1.1"
+    "validator": "^13.1.1",
+    "winston": "^3.3.3"
   },
   "devDependencies": {
     "prettier": "^2.0.5"

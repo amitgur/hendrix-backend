@@ -11,13 +11,13 @@ const passport = require("passport");
 dotenv.config({ path: ".env" });
 
 // connect to mongo
-require("./config/mongoose")();
+require("./hendrix/mongoose")();
 
 // register mongoose models
 require("./models");
 
 // create passport
-const passportConfig = require("./config/passport")(passport);
+const passportConfig = require("./hendrix/passport")(passport);
 
 /**
  * Create Express server.
@@ -26,12 +26,12 @@ const app = express();
 
 // Initialise routes by arguments
 const router = express.Router();
-require("./config/routes")(router, passportConfig);
+require("./hendrix/routes")(router, passportConfig);
 
 // express setup
-require("./config/express")(app, passport, passportConfig, router);
+require("./hendrix/express")(app, passport, passportConfig, router);
 
-require("./controllers/bnpEmail/sendGridHandler").initSendGrid();
+require("./hendrix/logger");
 
 /**
  * Start Express server.

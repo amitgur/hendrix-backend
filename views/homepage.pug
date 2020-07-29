@@ -1,5 +1,8 @@
 extends layout
 
 block content
-  p Rest service for BandPad
-  p User: #{user ? user.username : "NoUser"}
+  h1 Rest service for BandPad
+  if user
+    p User: #{user}
+  else
+    p No User Found

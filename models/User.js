@@ -9,8 +9,6 @@ const userSchema = new mongoose.Schema({
   name: String,
   hashed_password: String,
   salt: String,
-
-  schools: Array,
 });
 
 /**

@@ -81,7 +81,7 @@ module.exports = function (app, passport, passportConfig, router) {
     express.static(path.join(__dirname, "../public"), { maxAge: 31557600000 })
   );
  */
-  app.use("/api", router);
+  app.use("/apiV1", router);
 
   /**
    * Error Handler.
