@@ -9,8 +9,19 @@ npm install
 ````
 Create a .env file in the root folder and copy this lines to it:
 ````
+PORT=8989
+# any mongodb uri
+MONGODB_URI=mongodb://localhost:27017/hendrix
 
+# some random chars 
+SESSION_SECRET=WeLoveIsrael
+
+# this can be development or production
+NODE_ENV=development 
+
+# some random chars 
+MAGIC_WORD=MusicIsLife
+
+# this directory from the root will hold the logs
+LOG_DIR=log
 ````
-To create an api call, create a new mudule as home module example
-
-On the .env, set the uri for the mongodb, pay attention for the database name
